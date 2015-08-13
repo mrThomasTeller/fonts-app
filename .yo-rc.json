@@ -1,0 +1,9 @@
+{
+  "generator-derby": {
+    "project": "derbyjs",
+    "apps": [
+      "fonts"
+    ],
+    "coffee": false
+  }
+}

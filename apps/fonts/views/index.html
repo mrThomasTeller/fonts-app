@@ -1,0 +1,35 @@
+<Title:>
+  Fonts Example
+
+<Body:>
+  <view is="App" data="{{_page.data}}"/>
+
+<App:>
+  <view is="Form" query="{{@data.query}}" str="{{@data.str}}"/>
+  <br>
+  <view is="Results" data="{{@data}}"/>
+
+<Form:>
+  <div class="row">
+    <div class="col-xs-6">
+      <input type="text" class="form-control" value="{{@query}}" placeholder="Поиск">
+    </div>
+    <div class="col-xs-6">
+      <input type="text" class="form-control" value="{{@str}}" placeholder="Пример">
+    </div>
+  </div>
+
+<Results:>
+  <table class="table">
+    <tbody>
+    {{each filtered as #font}}
+      <view is="Row" str="{{@data.str}}" font="{{#font}}"/>
+    {{/each}}
+    </tbody>
+  </table>
+
+<Row:>
+  <tr>
+    <td>{{@font}}</td>
+    <td style="font-family: '{{@font}}';">{{@str}}</td>
+  </tr>
