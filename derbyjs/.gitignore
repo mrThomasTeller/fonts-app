@@ -1,0 +1,5 @@
+derbyjs/node_modules/express/node_modules/send/node_modules
+.DS_Store
+*.swp
+.idea
+/public/derby

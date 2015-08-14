@@ -1,0 +1,13 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css";
+@import "http://webfonts.ru/import/anfisa.css";
+@import "http://webfonts.ru/import/boomboom.css";
+@import "http://webfonts.ru/import/bradobrei.css";
+@import "http://webfonts.ru/import/champignon.css";
+@import "http://webfonts.ru/import/classica.css";
+
+body {
+  padding: 10px;
+  }
+td {
+  width: 50%;
+  }
