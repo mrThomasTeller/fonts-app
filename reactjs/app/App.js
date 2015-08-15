@@ -1,21 +1,9 @@
 var _ = require('lodash');
 var React = require('react');
 
-var model = {
-  fonts: [
-    'Anfisa Grotesk',
-    'BoomBoom',
-    'Bradobrei',
-    'Champignon',
-    'Classica One'
-  ],
-  query: '',
-  str: ''
-};
-
 var App = React.createClass({
   getInitialState: function() {
-    return _.clone(model);
+    return _.clone(this.props.data);
   },
   
   render: function() {

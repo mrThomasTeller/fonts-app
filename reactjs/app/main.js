@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 var React = require('react');
 var App = require('./App.js');
-React.render(<App/>, document.body);
+React.render(<App data={window.__INITIAL_DATA__}/>, document.getElementById('content'));
