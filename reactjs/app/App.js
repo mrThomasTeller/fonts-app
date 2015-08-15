@@ -13,7 +13,7 @@ var App = React.createClass({
     
     return (
       <div>
-        <Form query={this.state.query} str={this.state.str}
+        <Parameters query={this.state.query} str={this.state.str}
           onChangeQuery={function(value){ this.setState({query: value}); }.bind(this)}
           onChangeStr={function(value){ this.setState({str: value}); }.bind(this)}/>
         <br/>
@@ -23,7 +23,7 @@ var App = React.createClass({
   }
 });
 
-var Form = React.createClass({
+var Parameters = React.createClass({
   createListener: function(listener) {
     if (listener) {
       return function(e) {
